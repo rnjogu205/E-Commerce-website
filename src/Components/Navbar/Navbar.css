@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 60px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 90%;
+    z-index: 1000;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: auto;
+}
+
+.nav-logo p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d3557;
+    margin: 0;
+    white-space: nowrap
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    color: #495057;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    cursor: pointer;
+    transition: color 0.3s;
+    gap: 3px;
+}
+
+.nav-menu li:hover {
+    color: #e63946;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.login-btn {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e63946;
+}
+
+.cart-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e63946;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .nav-logo {
+        order: 1;
+        flex: 1;
+    }
+    
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    .nav-login-cart {
+        order: 2;
+    }
+    
+    .nav-logo p {
+        font-size: 18px;
+    }
+    
+    .nav-menu {
+        font-size: 16px;
+    }
+}
