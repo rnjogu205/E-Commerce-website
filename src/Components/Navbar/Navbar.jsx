@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import cartIcon from '../../assets/Cart.png';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
-  const [cartItems, setCartItems] = useState(0); // Example cart item count
 
   return (
     <nav className="navbar">
@@ -14,16 +14,16 @@ const Navbar = () => {
       </div>
       
       <ul className="nav-menu">
-        <li>Shop</li>
-        <li>Men</li>
-        <li>Women</li>
+        <li><Link to='/'>Shop</Link> </li>
+        <li><Link to='/men'>Men</Link></li>
+        <li><Link to='/women'>Women</Link></li>
       </ul>
       
       <div className="nav-login-cart">
-        <button className="login-btn">Log in</button>
+        <Link to='/login'><button className="login-btn">Log in</button></Link>
         <div className="cart-container">
-          <img src={cartIcon} alt="cart" className="cart-icon" />
-          {cartItems > 0 && <div className="cart-count">{cartItems}</div>}
+          <Link to='/cart'><img src={cartIcon} alt="cart" className="cart-icon" /></Link>
+          <div className="cart-count">0</div>
         </div>
       </div>
     </nav>
