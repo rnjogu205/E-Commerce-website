@@ -1,0 +1,37 @@
+.women {
+  padding: 20px;
+}
+
+.women h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.women hr {
+  margin: 20px auto;
+  width: 60%;
+  border: 1px solid #ccc;
+}
+
+.women-item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive grid */
+  gap: 20px; /* space between items */
+  justify-items: center; /* center items inside their grid cell */
+}
+
+.women-item-grid .item {
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.women-item-grid .item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
