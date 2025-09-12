@@ -15,7 +15,7 @@
 
 .footer-logo p{
     color:#383838 ;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -59,10 +59,10 @@
 }
 
 .icons-container img{
-    width: 50px;
+    width: 70px;
     height: auto;
 }
 .footer img{
-    width: 100px;
+    width: 80px;
     height: auto;
 }
