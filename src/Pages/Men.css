@@ -1,5 +1,6 @@
 .men {
-  padding: 20px;
+  padding: 50px;
+  background: linear-gradient(135deg, #1F1F1F, #3B3B3B3B);
 }
 
 .men h2 {
