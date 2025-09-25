@@ -9,7 +9,7 @@ import img_w2 from './womanTshirt1.jpg'
 import img_w3 from './womanTshirt2.jpg'
 import img_w4 from './womanTshirt3.jpg'
 
-import img_m1 from './menTshirt.jpg'
+import img_m1 from './menTshirt.png'
 import img_m2 from './menTshirt2.jpg'
 import img_m3 from './menTshirt3.webp'
 import img_m4 from './menTshirt4.jpg'
@@ -17,7 +17,7 @@ import img_m5 from './menTrouser1.webp'
 import img_m6 from './menTrouser2.webp'
 import img_m7 from './menTrouser3.jpg'
 import img_m8 from './menTrouser4.jpg'
-import img_m9 from './menHoodie1.jpg'
+import img_m9 from './menHoodie1.png'
 import img_m10 from './menTracky.jpg'
 
 let product_data= [

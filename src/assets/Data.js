@@ -2,14 +2,14 @@ import img_w1 from './womanHoodie.jpg'
 import img_w2 from './womanTshirt1.jpg'
 import img_w3 from './womanTshirt2.jpg'
 import img_w4 from './womanTshirt3.jpg'
-import img_m1 from './menTshirt.jpg'
+import img_m1 from './menTshirt.png'
 import img_m2 from './menTshirt2.jpg'
-import img_m3 from './menHoodie1.jpg'
+import img_m3 from './menHoodie1.png'
 import img_m4 from './menTracky.jpg'
 
 let product_data= [
     {
-        id:1,
+        id:4,
         name:"Purple Zip-up Hoodie",
         image:img_w1,
         price:65.00,
@@ -17,7 +17,7 @@ let product_data= [
     },
 
     {
-        id:2,
+        id:1,
         name:"Black and White Sports Jersey",
         image:img_w2,
         price:50.00,
@@ -25,7 +25,7 @@ let product_data= [
     },
 
     {
-        id:3,
+        id:2,
         name:"Blue long Sleeved Top",
         image:img_w3,
         price:45.00,
@@ -33,7 +33,7 @@ let product_data= [
     },
 
     {
-        id:4,
+        id:3,
         name:"Vintage Graphic T-shirt",
         image:img_w4,
         price:65.00,
@@ -41,7 +41,7 @@ let product_data= [
     },
     
     {
-        id:5,
+        id:11,
         name:"Vintage Angel wings T-shirt",
         image:img_m1,
         price:40.00,
@@ -49,7 +49,7 @@ let product_data= [
     },
 
     {
-        id:6,
+        id:12,
         name:"Beige Vintage Retro Football Jersey",
         image:img_m2,
         price:60.00,
@@ -57,7 +57,7 @@ let product_data= [
     },
 
     {
-        id:7,
+        id:19,
         name:"Black Denim Tears Hoodie",
         image:img_m3,
         price:120.00,
@@ -65,7 +65,7 @@ let product_data= [
     },
 
     {
-        id:8,
+        id:20,
         name:"Baggy Grey & Pink Syna Tracksuit",
         image:img_m4,
         price:110.00,
