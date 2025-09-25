@@ -1,32 +1,30 @@
 .trending {
-  /* width: 100%;*/
   text-align: center;
-  background-color: #815959;
+  background-color: rgb(74, 69, 69);
   margin: 10px 0;
   padding: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:0px;
   height: 100vh;
 }
 
-.trending-section h2 {
+.trending h2 {
   font-size: 50px;
   font-weight:600;
+  color: white;
 
 }
 .trending hr{
-  width: 200px;
+  width: 600px;
   height: 6px;
   border-radius: 10px;
   background: #252525;
+  margin-bottom: 50px;
 }
 
 .trending-item-grid {
   display: flex;
-  /* flex-wrap:wrap; */
-  margin-top: 0px;
   gap: 20px;
   justify-items: center;
 }

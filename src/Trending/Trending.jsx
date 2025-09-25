@@ -1,24 +1,33 @@
 import './Trending.css'
 import product_data from '../assets/Data.js'
 import Item from '../Items/item.jsx'
+import { Link } from 'react-router-dom';
 
-const Trending = ({category}) => {
+const Trending = ({ category }) => {
+  const filteredProducts = product_data.filter(product => product.category === category);
 
-    const filteredProducts = product_data.filter(product => product.category === category);
-    return(
-        <div className="trending">
-            <h2>Trending in {category === "men" ? "Men" : "Women"}</h2>
-            <hr/>
-            <div className="trending-item-grid">
-                {filteredProducts.map((item)=> {
-                return <Item 
-                key={item.id} 
-                id={item.id} 
-                name={item.name}
-                image={item.image} 
-                price={item.price}/>})}
-            </div>
-        </div>
-    )
+  return (
+    <div className="trending">
+      <h2>Trending in {category === "men" ? "Men" : "Women"}</h2>
+      <hr/>
+      <div className="trending-item-grid">
+        {filteredProducts.map((item) => (
+          <Link 
+            to={`/product/${item.id}`} 
+            key={item.id} 
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <Item
+              id={item.id}
+              name={item.name}
+              image={item.image}
+              price={item.price}
+            />
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }
-export default Trending
+
+export default Trending;
